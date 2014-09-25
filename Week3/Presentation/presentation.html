@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<title>Explaining Justified Gallery</title>
+
+        <link rel="stylesheet" type="text/css" href="thirdparty/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="thirdparty/RevealJS/css/reveal.min.css">
+		<link rel="stylesheet" type="text/css" href="thirdparty/RevealJS/css/theme/serif.css">
+        <link rel="stylesheet" href="thirdparty/RevealJS/lib/css/styles/tomorrow-night-eighties.css">
+	</head>
+	<body>
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Justified Gallery Demo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Demo</a></li>
+                        <li><a href="presentation.html">Presentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Justified Gallery</h1>
+                    <p><em>From the website</em></p>
+                    <p>
+						This plugin allows users to create images that are high quality, vary in all sizes
+                        and fill white space with images.
+					</p>
+				</section>
+                <section>
+                	<section>
+                    	<h2> Download plugin</h2>
+                        <pre><code>http://miromannino.com/projects/justified-gallery/</code></pre>
+                    </section>
+                    <section>
+                    	<h2> Add Folders</h2>
+                        <p>Add plugin folders to your file</p>
+                        <pre><code>JustifiedGallery.css</code></pre>
+                        <pre><code>JustifiedGallery.js</code></pre>
+                    </section>
+                    <section>
+                    	<h2>More plugins</h2>
+                        <p>Depending on what look and feel you may want for your gallery,
+                        you may want to add a few more plugins. For instance in my example
+                        I used 'swipebox'.</p>
+                    </section>
+                </section>
+                <section>
+                	<h2>Start Coding</h2>
+                    <p>For a simple Justified Gallery webpage, add</p>
+                    <ul>
+                        <li>CSS Link</li>
+                        <pre><code>&lt;link rel="stylesheet" href="css/justifiedGallery.css"&gt;&lt;/link&gt;</code></pre>
+                        <li>JS Script</li>
+                        <pre><code>&lt;script src="js/justifiedGallery.js"&gt;&lt;/script&gt;</code></pre>
+                        <li>Your additional Plugin</li>
+                        <pre><code>&lt;script src="js/jquery.swipebox.min.js"&gt;&lt;/script&gt;</code></pre>
+                    </ul>
+                </section>
+                <section>
+                	<h2>HTML tags</h2>
+                    <p>Since you will only be working with images be sure to add</p>
+                    <ol>
+                        <li>&lt;div class=&quot;myGallery&quot;&gt;</li>
+                        <li>&lt;a href=&quot;img/oldfarm_m.jpg&quot; title=&quot;What's your destination?&quot;&gt;</li>
+                        <li>&lt;img alt=&quot;What's your destination?&quot; src=&quot;img/oldfarm_t.jpg&quot; /&gt;</li>
+                    </ol>
+                </section>
+               <section>
+                   <section>
+                    <h2>JS code</h2>
+                       <p>Simple Basic Code:</p>
+                       <pre><code>$(&quot;.myGallery&quot;).justifiedGallery();</code></pre>
+                  	</section>
+                   <section>
+                       <h2>JS code</h2>
+                       <p>Another type of code to try</p>
+                       <p><em>Random Size Images</em></p>
+                       <pre><code>$(&quot;.myGallery&quot;).justifiedGallery({ randomize : true });</code></pre>
+                   </section>
+                    <section>
+                        <h2>Final Code View</h2>
+                        <pre><code data-trim>
+
+    &lt;!DOCTYPE html&gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;main-nav&quot;&gt; &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt; &lt;li&gt;
+    &lt;a href=&quot;presentation.html&quot;&gt;Presentation&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;
+    &lt;h1&gt;Justified Gallery Presentation&lt;/h1&gt; &lt;div class=&quot;myGallery&quot;&gt;
+    &lt;a href=&quot;img/oldfarm_m.jpg&quot; title=&quot;What's your destination?&quot;&gt; &lt;img alt=&quot;What's your destination?&quot; src=&quot;img/oldfarm_t.jpg&quot; /&gt;
+    &lt;/a&gt; &lt;a href=&quot;img/lv_m.jpg&quot; title=&quot;Just in a dream Place&quot;&gt; &lt;img alt=&quot;Just in a dream Place&quot; src=&quot;img/lv_t.jpg&quot; /&gt;
+    &lt;/a&gt; &lt;a href=&quot;img/farm_m.jpg&quot; title=&quot;Peaceful Innocence&quot;&gt; &lt;img alt=&quot;Peaceful Innocence&quot; src=&quot;img/farm_t.jpg&quot; /&gt; &lt;/a&gt;
+    &lt;a href=&quot;img/london_m.jpg&quot; title=&quot;Simply Beautiful&quot;&gt; &lt;img alt=&quot;Simply Beautiful&quot; src=&quot;img/london_t.jpg&quot; /&gt;
+    &lt;/a&gt; &lt;a href=&quot;img/tractor_z.jpg&quot; title=&quot;Big Red&quot;&gt; &lt;img alt=&quot;Big Red&quot; src=&quot;img/tractor_t.jpg&quot; /&gt;
+    &lt;/a&gt; &lt;a href=&quot;img/moscow_m.jpg&quot; title=&quot;Night Life&quot;&gt; &lt;img alt=&quot;Night Life&quot; src=&quot;img/moscow_t.jpg&quot; /&gt; &lt;/a&gt;
+    &lt;a href=&quot;img/roxy_m.jpg&quot; title=&quot;Puppy Eyes&quot;&gt; &lt;img alt=&quot;Puppy Eyes&quot; src=&quot;img/roxy_t.jpg&quot; /&gt; &lt;/a&gt;
+    &lt;a href=&quot;img/sunshine_z.jpg&quot; title=&quot;Sunshine&quot;&gt; &lt;img alt=&quot;Sunshine&quot; src=&quot;img/sunshine_t.jpg&quot; /&gt; &lt;/a&gt;
+    &lt;a href=&quot;img/henna_m.jpg&quot; title=&quot;My Baby&quot;&gt; &lt;img alt=&quot;My Baby&quot; src=&quot;img/henna_t.jpg&quot; /&gt;
+    &lt;/a&gt; &lt;a href=&quot;img/redwoodforest_z.jpg&quot; title=&quot;RedWood Forest&quot;&gt; &lt;img alt=&quot;RedWood Forest&quot; src=&quot;img/redwoodforest_t.jpg&quot; /&gt;
+    &lt;/a&gt; &lt;/div&gt; &lt;br/&gt; &lt;div class=&quot;myGallery&quot;&gt; &lt;a href=&quot;img/rain_z.jpg&quot; title=&quot;Rain&quot;&gt;
+    &lt;img alt=&quot;Rain&quot; src=&quot;img/rain_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/wall_z.jpg&quot; title=&quot;Brilliant.&quot;&gt;
+    &lt;img alt=&quot;Brilliant&quot; src=&quot;img/wall_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/bike_z.jpg&quot; title=&quot;Red&quot;&gt;
+    &lt;img alt=&quot;Red&quot; src=&quot;img/bike_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/straws_z.jpg&quot; title=&quot;Colorful&quot;&gt;
+    &lt;img alt=&quot;Colorful&quot; src=&quot;img/straws_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/heart_z.jpg&quot; title=&quot;I love you&quot;&gt;
+    &lt;img alt=&quot;I love you&quot; src=&quot;img/heart_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/pink_z.jpg&quot; title=&quot;Sweet Flower&quot;&gt;
+    &lt;img alt=&quot;Sweet Flower&quot; src=&quot;img/pink_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/abstract_z.jpg&quot; title=&quot;Wall&quot;&gt;
+    &lt;img alt=&quot;Wall&quot; src=&quot;img/abstract_t.jpg&quot; /&gt; &lt;/a&gt; &lt;/div&gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;
+
+                        </code></pre>
+                    </section>
+               </section>
+
+        <script src="thirdparty/RevealJS/lib/js/head.min.js"></script>
+        <script src="thirdparty/RevealJS/js/reveal.min.js"></script>
+        <script type="text/javascript">
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                theme: Reveal.getQueryHash().theme || 'serif',
+                transition: Reveal.getQueryHash().transition || 'default'
+			});
+
+		</script>
+
+        </div>
+    </div>
+</body>
+</html>
