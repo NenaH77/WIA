@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Explaining Justified Gallery</title>
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="lib/css/styles/tomorrow-night-eighties.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Justified Gallery</h1>
+					<p>
+						This plugin allows users to create images which are of high quality and become a justified gallery.
+                        These images vary in all sizes. Each space is filled with an image.
+					</p>
+				</section>
+                <section>
+                	<section>
+                    	<h2> Download plugin</h2>
+                        <p class="fragment">http://miromannino.com/projects/justified-gallery/</p>
+                        <p class="fragment">Arrow down</p>
+                    </section>
+                    <section>
+                    	<h2> Add Folders</h2>
+                        <p>Add plugin folders to your file</p>
+                        <p>Arrow down</p>
+                    </section>
+                    <section>
+                    	<h2>You may need more plugins</h2>
+                        <p>Depending on what look and feel you may want for your gallery
+                        you may want to add a few more plugins. For instance in my example
+                        I created a 'swipebox' look. Therefore, I needed to download the swipbox
+                        plugin for my gallery</p>
+                    </section>
+                </section>
+                <section>
+                	<h2>Start Coding</h2>
+                    <p>For a simple Justified Gallery webpage, add</p>
+                    <ul>
+                        <li class="fragment fade-in">css links</li>
+                        <li class="fragment fade-in">js scripts</li>
+                        <li class="fragment fade-in">or any other additional plugin links or scripts that you may need</li>
+                    </ul>
+                </section>
+                <section data-background="#ffcccc" data-background-transition="slide">
+                	<h2>HTML tags</h2>
+                    <p>Since you will only be working with images be sure to add</p>
+                    <ol>
+                        <li class="fragment roll-in">div tag with a class or id</li>
+                        <li class="fragment roll-in">a tag</li>
+                        <li class="fragment roll-in">img tag</li>
+                        <li class="fragment roll-in">to create a caption for your images, make sure to add 'alt' in the img tag</li>
+                    </ol>
+                </section>
+               <section>
+                   <section data-background="#ffcccc" data-background-transition="slide">
+                    <h2>JS code</h2>
+                       <p>For a simple basic code:</p>
+                       <p>$("div class/id").justifiedGallery();</p>
+                  	</section>
+                <section>
+                		<h2>Code View</h2>
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Justified Gallery Plugin
+                            &amp;lt;/title&amp;gt; &amp;lt;!--CSS--&amp;gt; &amp;lt;link type=&quot;text/css&quot;
+                            rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&amp;gt; &amp;lt;link type=&quot;
+                            text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/justifiedGallery.css&quot; /&amp;gt;
+                            &amp;lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/swipebox.css&quot; /&amp;gt;
+                            &amp;lt;!--jQuery--&amp;gt;&amp;lt;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;
+                            &lt;h1&gt;Justified Gallery Presentation&lt;/h1&gt;&lt;div class=&quot;myGallery&quot;&gt; &lt;a href=&quot;img/oldfarm_m.jpg&quot;
+                            title=&quot;What's your destination?&quot;&gt; &lt;img alt=&quot;What's your destination?&quot;
+                            src=&quot;img/oldfarm_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/lv_m.jpg&quot; title=&quot;
+                            Just in a dream Place&quot;&gt; &lt;img alt=&quot;Just in a dream Place&quot; src=&quot;img/lv_t.jpg&quot;
+                            /&gt; &lt;/a&gt; &lt;a href=&quot;img/farm_m.jpg&quot; title=&quot;Peaceful Innocence&quot;&gt; &lt;img
+                            alt=&quot;Peaceful Innocence&quot; src=&quot;img/farm_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/london_m.jpg&quot;
+                            title=&quot;Simply Beautiful&quot;&gt; &lt;img alt=&quot;Simply Beautiful&quot; src=&quot;img/london_t.jpg&quot; /&gt;
+                            &lt;/a&gt; &lt;a href=&quot;img/tractor_z.jpg&quot; title=&quot;Big Red&quot;&gt; &lt;img alt=&quot;Big Red&quot;
+                            src=&quot;img/tractor_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/moscow_m.jpg&quot;
+                            title=&quot;Night Life&quot;&gt; &lt;img alt=&quot;Night Life&quot; src=&quot;img/moscow_t.jpg&quot;
+                            /&gt; &lt;/a&gt; &lt;a href=&quot;img/roxy_m.jpg&quot; title=&quot;Puppy Eyes&quot;&gt; &lt;img alt=&quot;Puppy
+                            Eyes&quot; src=&quot;img/roxy_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/sunshine_z.jpg&quot;
+                            title=&quot;Sunshine&quot;&gt; &lt;img alt=&quot;Sunshine&quot; src=&quot;img/sunshine_t.jpg&quot; /&gt;
+                            &lt;/a&gt; &lt;a href=&quot;img/henna_m.jpg&quot; title=&quot;My Baby&quot;&gt; &lt;img alt=&quot;My Baby&quot;
+                            src=&quot;img/henna_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/redwoodforest_z.jpg&quot; title=&quot;RedWood
+                            Forest&quot;&gt; &lt;img alt=&quot;RedWood Forest&quot; src=&quot;img/redwoodforest_t.jpg&quot; /&gt; &lt;/a&gt; &lt;/div&gt;
+                            &lt;br/&gt; &lt;div class=&quot;myGallery&quot;&gt; &lt;a href=&quot;img/rain_z.jpg&quot; title=&quot;Rain&quot;&gt;
+                            &lt;img alt=&quot;Rain&quot; src=&quot;img/rain_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/wall_z.jpg&quot;
+                            title=&quot;Brilliant.&quot;&gt; &lt;img alt=&quot;Brilliant&quot; src=&quot;img/wall_t.jpg&quot;
+                            /&gt; &lt;/a&gt; &lt;a href=&quot;img/bike_z.jpg&quot; title=&quot;Red&quot;&gt; &lt;img alt=&quot;Red&quot;
+                            src=&quot;img/bike_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/straws_z.jpg&quot; title=&quot;Colorful&quot;&gt;
+                            &lt;img alt=&quot;Colorful&quot; src=&quot;img/straws_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/heart_z.jpg&quot;
+                            title=&quot;I love you&quot;&gt; &lt;img alt=&quot;I love you&quot; src=&quot;img/heart_t.jpg&quot; /&gt;
+                            &lt;/a&gt; &lt;a href=&quot;img/pink_z.jpg&quot; title=&quot;Sweet Flower&quot;&gt; &lt;img alt=&quot;Sweet
+                            Flower&quot; src=&quot;img/pink_t.jpg&quot; /&gt; &lt;/a&gt; &lt;a href=&quot;img/abstract_z.jpg&quot; title=&quot;Wall&quot;&gt;
+                            &lt;img alt=&quot;Wall&quot; src=&quot;img/abstract_t.jpg&quot; /&gt; &lt;/a&gt; &lt;/div&gt; &amp;lt;/body&amp;gt;
+                            &amp;lt;/html&amp;gt;
+                        </code>
+                        </pre>
+                </section>
+               </section>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+                theme: Reveal.getQueryHash().theme || 'serif', // available themes are in /css/theme
+
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+        </div>
+    </div>
+</body>
+</html>
