@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caffe Sospeso</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- google chart and font -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- modernizr -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+<body  id="page-top" class="index">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">We Love Coffee</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">About</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#barchart">Coffee Stats</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#galla">Gallery</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#video">Video</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header/Logo -->
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="img/coffeebeans_o.jpg" alt="Coffee">
+
+
+
+                <!--<canvas id="Canvas" width="300" height="200">Your browser does not support canvas</canvas>-->
+                <div class="intro-text">
+                    <span class="name">Welcome to Cafe Sospeso</span>
+                    <hr class="star-light">
+                    <span class="skills">Where we believe in the art of giving great quality to great people</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Cafe Sospeso -->
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>About</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <p>Cafe Sospeso (also known as suspended coffee) is a coffee house that thrives on the idea of charity.
+                    Suspended coffee/pending coffee is when a cup of coffee has already been paid for in advanced through the
+                    act of charity. This act of kindness began in Naples, Italy when someone who experienced good luck would
+                    order a suspeso, they would pay for 2 coffees but would receive 1. Later when a poor person enquired if
+                    there was a sospeso available they would receive the free coffee</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Histogram Chart -->
+<section id="barchart">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>What's your favorite Cafe Shop?</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div id="chart" class="col-lg-4">
+            <div id="chart_div" style="width: 500px; height: 300px;"></div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p>Our coffee may be stronger then our competitors but with our organic beans and special roast handling
+                we are able to cut out the strong bitterness so you taste nothing but pure silk, smooth and rich flavors.</p>
+            <a href="#" class="btn btn-lg btn-outline">
+                <button id="fadeChart" class="btn btn-success btn-lg">Status Chart</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section class="success" id="galla">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Photo Gallery</h2>
+                <p>New Locations opening in 2015</p>
+                <button id="gallery" class="btn btn-default">Click To View Gallery</button>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div id="image" class="col-lg-10 col-lg-offset-2">
+                    <a class="CSimages" href="img/CaffeeRoma.jpg" data-lightbox="location" data-title="Roma">
+                        <img class="Rome" alt="cafeShop" src="img/CaffeeRomaThumb.jpg"></a>
+                    <a class="CSimages" href="img/paris_z.jpg" data-lightbox="location" data-title="Paris">
+                        <img class="Rome" alt="cafeShop" src="img/paris_t.jpg"></a>
+                    <a class="CSimages" href="img/california.jpg" data-lightbox="location" data-title="Los Angeles">
+                        <img class="Rome" alt="cafeShop" src="img/californiaThumb.jpg"></a>
+                    <a class="CSimages" href="img/germany.jpg" data-lightbox="location" data-title="Berlin">
+                        <img class="Rome" alt="cafeShop" src="img/germanyThumb.jpg"></a>
+                    <a class="CSimages" href="img/minnesota.jpg" data-lightbox="location" data-title="Saint Paul">
+                        <img class="Rome" alt="cafeShop" src="img/minnesotaThumb.jpg"></a>
+                    <a class="CSimages" href="img/SanDeigo.jpg" data-lightbox="location" data-title="San Deigo">
+                        <img class="Rome" alt="cafeShop" src="img/SanDiegoThumb.jpg"></a>
+               </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Heart Coffee -->
+<section id="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>My Canvas</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <canvas id="Canvas" width="300" height="200">Your browser does not support canvas</canvas>
+                </div>
+                <div class="col-lg-6">
+                    <canvas id="Canvas1" width="400" height="200">Your browser does not support canvas.</canvas>
+                </div>
+            </div>
+<!-- Video -->
+        <div class="row">
+            <div id="videoclip" class="col-sm-4 portfolio-item">
+                <video width="630" height="355" controls>
+                    <source src = "video/Coffee-SD.ogv" type ="video/ogg"/>
+                    <p> Your browser doesn't support HTML5 video tag. You may <a href="video/coffee.ogv">download the video</a> instead.</p>
+                </video>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="footer-col col-md-4">
+                <h3>Cafe Sospeso</h3>
+                <p>is a fictional company created by Angelica M. Dinh for Web Interaction & Animation at FullSail University.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+<div class="footer-below">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                Copyright &copy; Your Website 2014
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- jQuery Mini Version -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Lightbox -->
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<!-- JavaScript -->
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/freelancer.js"></script>
+</body>
+</html>
