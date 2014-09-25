@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Justified Gallery Plugin</title>
+    <!--CSS-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/justifiedGallery.css" />
+    <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jquery2.js"></script>
+    <!--<script type="text/javascript" src="js/main.js"></script>-->
+    <script type="text/javascript" src="js/justifiedGallery.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            $('.myGallery').justifiedGallery({
+                rowHeight: 170,
+                lastRow : 'nojustify',
+                margins : 3
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Justified Gallery Presentation</h1>
+<div class="myGallery">
+    <a href="img/oldfarm_m.jpg" title="What's your destination?">
+        <img alt="What's your destination?" src="img/oldfarm_t.jpg" />
+    </a>
+    <a href="img/lv_m.jpg" title="Just in a dream Place">
+        <img alt="Just in a dream Place" src="img/lv_t.jpg" />
+    </a>
+    <a href="img/farm_m.jpg" title="Peaceful Innocence">
+        <img alt="Peaceful Innocence" src="img/farm_t.jpg" />
+    </a>
+    <a href="img/london_m.jpg" title="Simply Beautiful">
+        <img alt="Simply Beautiful" src="img/london_t.jpg" />
+    </a>
+    <a href="img/tractor_z.jpg" title="Big Red">
+        <img alt="Big Red" src="img/tractor_t.jpg" />
+    </a>
+    <a href="img/moscow_m.jpg" title="Night Life">
+        <img alt="Night Life" src="img/moscow_t.jpg" />
+    </a>
+    <a href="img/roxy_m.jpg" title="Puppy Eyes">
+        <img alt="Puppy Eyes" src="img/roxy_t.jpg" />
+    </a>
+    <a href="img/sunshine_z.jpg" title="Sunshine">
+        <img alt="Sunshine" src="img/sunshine_t.jpg" />
+    </a>
+    <a href="img/henna_m.jpg" title="My Baby">
+        <img alt="My Baby" src="img/henna_t.jpg" />
+    </a>
+    <a href="img/redwoodforest_z.jpg" title="RedWood Forest">
+        <img alt="RedWood Forest" src="img/redwoodforest_t.jpg" />
+    </a>
+</div>
+<br/>
+<div class="myGallery">
+    <a href="img/rain_z.jpg" title="Rain">
+        <img alt="Rain" src="img/rain_t.jpg" />
+    </a>
+    <a href="img/wall_z.jpg" title="Brilliant.">
+        <img alt="Brilliant" src="img/wall_t.jpg" />
+    </a>
+    <a href="img/bike_z.jpg" title="Red">
+        <img alt="Red" src="img/bike_t.jpg" />
+    </a>
+    <a href="img/straws_z.jpg" title="Colorful">
+        <img alt="Colorful" src="img/straws_t.jpg" />
+    </a>
+    <a href="img/heart_z.jpg" title="I love you">
+        <img alt="I love you" src="img/heart_t.jpg" />
+    </a>
+    <a href="img/pink_z.jpg" title="Sweet Flower">
+        <img alt="Sweet Flower" src="img/pink_t.jpg" />
+    </a>
+    <a href="img/abstract_z.jpg" title="Wall">
+        <img alt="Wall" src="img/abstract_t.jpg" />
+    </a>
+</div>
+</body>
+
+</html>
